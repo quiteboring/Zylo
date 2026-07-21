@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Zylo",
-    "slug": "Zylo",
+    "slug": "zylo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,6 +24,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8d0791ad-4151-4133-8a44-649ef94a73a7"
+      }
+    },
+    "owner": "quiteboring"
   }
 }
