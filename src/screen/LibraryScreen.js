@@ -1,10 +1,15 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 import colors from "../theme/colors";
+import Header from "../component/layout/Header";
 
 export default function LibraryScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Library</Text>
+      <Header />
+
+      <View style={styles.body}>
+        {/* content goes here */}
+      </View>
     </View>
   );
 }
@@ -14,9 +19,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.background,
   },
-
-  text: {
-    color: colors.text,
-    fontSize: 24,
+  body: {
+    flex: 1,
+    paddingHorizontal: 20,
   },
 });
