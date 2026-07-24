@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import colors from "./src/theme/colors";
 import Navbar from "./src/component/layout/Navbar";
+import Player from "./src/component/Player";
 import ScreenManager from "./src/manager/ScreenManager";
 
 export default function App() {
@@ -31,6 +32,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <ActiveScreen />
+
+      {ScreenManager.getActiveName() !== "Home" && <Player />}
 
       <Navbar
         screens={ScreenManager.getScreens()}
