@@ -107,9 +107,8 @@ const styles = StyleSheet.create({
   body: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center",
+    marginTop: 100,
     paddingHorizontal: 30,
-    marginTop: -100,
   },
   empty: {
     color: colors.textMuted,
